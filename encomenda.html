@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encomenda | Dona Clara</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><nav class="nav container"><a class="logo" href="index.html"><span>🍞</span> Dona Clara</a><button class="menu-toggle">☰</button><div class="nav-links"><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="encomenda.html">Encomendas</a><a href="index.html#coffee">Coffee Break</a></div><a class="btn btn-small" href="cardapio.html">Ver cardápio</a></nav></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">PEDIDO DIGITAL</span><h1>Vamos preparar seu pedido.</h1><p>Preencha os dados abaixo. No final, você receberá um resumo para confirmar sua encomenda.</p></div></section>
+<section class="section"><div class="container form-layout">
+<form id="orderForm" class="form-card">
+<h2>Dados da encomenda</h2>
+<label>Nome completo<input required id="nome" type="text" placeholder="Seu nome"></label>
+<label>WhatsApp<input required id="telefone" type="tel" placeholder="(41) 99999-9999"></label>
+<div class="form-row"><label>Data de retirada<input required id="data" type="date"></label><label>Horário<input required id="hora" type="time"></label></div>
+<label>Tipo de pedido<select id="tipo"><option>Pedido para viagem</option><option>Encomenda de evento</option><option>Coffee break corporativo</option></select></label>
+<label>Produtos e quantidades<textarea required id="produtos" rows="5" placeholder="Ex.: 2 pães rústicos, 10 croissants, 1 bolo de chocolate..."></textarea></label>
+<label>Observações<textarea id="obs" rows="3" placeholder="Sabores, restrições, decoração ou outras informações"></textarea></label>
+<button class="btn" type="submit">Revisar encomenda →</button>
+</form>
+<aside class="summary-card"><span class="eyebrow">COMO FUNCIONA</span><h2>Mais organização para você.</h2><div class="step"><b>01</b><span><strong>Você escolhe</strong><small>Informe os produtos e quantidades.</small></span></div><div class="step"><b>02</b><span><strong>A Dona Clara confere</strong><small>Nossa equipe verifica disponibilidade.</small></span></div><div class="step"><b>03</b><span><strong>Você retira</strong><small>Seu pedido estará separado no horário combinado.</small></span></div><div class="warning">Pedidos de eventos devem ser feitos com antecedência para garantir disponibilidade.</div></aside>
+</div></section>
+</main>
+<footer class="footer"><div class="copyright">© 2026 Dona Clara Panificadora · Projeto acadêmico</div></footer>
+<div id="modal" class="modal"><div class="modal-box"><button class="close">×</button><span class="eyebrow">RESUMO DO PEDIDO</span><h2>Confira antes de enviar</h2><div id="summary"></div><a id="whatsappBtn" class="btn" target="_blank">Enviar pelo WhatsApp →</a><p class="modal-note">Demonstração acadêmica: o envio usa um número fictício.</p></div></div>
+<script src="js/script.js"></script>
+</body>
+</html>
